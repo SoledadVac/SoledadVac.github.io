@@ -7,7 +7,7 @@ var resultImg=new Image();
 resultImg.id="resultImg";
 resultImg.width=147;
 resultImg.height=246;
-document.body.appendChild(resultImg);
+
 //
 let bgImg=new Image();
 bgImg.id="bgImg";
@@ -36,7 +36,7 @@ if (drawing.getContext){
 let resultUrl=drawing.toDataURL("image/png");
 //window.location.href=resultUrl;
 resultImg.src=resultUrl;
-
+document.body.appendChild(resultImg);
 </script>
 <style>
 
